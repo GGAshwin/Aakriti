@@ -72,4 +72,11 @@ body {
   border-radius: 30px;
   font-size: 2rem;
   width: 80%;
+}
+#about .date-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: whitesmoke;
 }/*# sourceMappingURL=style.css.map */
