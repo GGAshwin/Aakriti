@@ -117,15 +117,19 @@ body {
 }
 
 .gallery {
-    background: #EEE;
+    background: #280a5f;
 }
 
 .gallery-cell {
     width: 66%;
-    height: 200px;
+    height: 500px;
     margin-right: 10px;
     background: #8C8;
     counter-increment: gallery-cell;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
 }
 
 /* cell number */
