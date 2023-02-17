@@ -79,4 +79,46 @@ body {
   justify-content: space-around;
   align-items: center;
   color: whitesmoke;
+}
+
+#gallery {
+  height: 100vh;
+  padding: 80px 0;
+}
+
+.section-title {
+  font-family: "Playball";
+  color: whitesmoke;
+  text-align: center;
+  font-style: italic;
+}
+
+.section-desc {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: whitesmoke;
+  font-size: 25px;
+  letter-spacing: 0.1em;
+}
+
+.gallery {
+  background: #EEE;
+}
+
+.gallery-cell {
+  width: 66%;
+  height: 200px;
+  margin-right: 10px;
+  background: #8C8;
+  counter-increment: gallery-cell;
+}
+
+/* cell number */
+.gallery-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(gallery-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: white;
 }/*# sourceMappingURL=style.css.map */
