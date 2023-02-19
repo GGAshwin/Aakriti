@@ -144,7 +144,7 @@ body {
   margin: 10px 0 !important;
 }
 
-.nav-link.tab-active {
+.tab-btn.nav-link.active {
   background-color: #45138d !important;
   border: 2px solid #FC0FC0 !important;
 }
