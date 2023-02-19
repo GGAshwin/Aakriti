@@ -3,24 +3,32 @@
     padding: 0;
 }
 
+// variables
+$bg: #280a5f;
+$light-bg: #45138d;
+$pink: #FC0FC0;
+$text: whitesmoke;
+
+
 body {
-    background: #280a5f;
+    background: $bg;
 }
 
 .navbar {
     position: sticky;
     top: 0;
-    background: #280a5f !important;
+    background: $bg !important;
     // background: transparent !important;
     border-bottom: 2px solid rgb(223, 223, 223);
+    z-index: 10;
 
     ul {
         li {
             a {
-                color: whitesmoke !important;
+                color: $text !important;
 
                 &:active {
-                    color: #FC0FC0 !important;
+                    color: $pink !important;
                 }
             }
         }
@@ -34,7 +42,7 @@ body {
         font-family: 'Playball';
         text-align: center;
         font-style: italic;
-        color: whitesmoke;
+        color: $text;
     }
 
     .hero-image {
@@ -52,9 +60,9 @@ body {
     }
 
     .register-btn {
-        background-color: #f011b6;
+        background-color: $pink;
         padding: 15px 45px;
-        color: whitesmoke;
+        color: $text;
         text-decoration: none;
         border-radius: 20px;
     }
@@ -65,7 +73,7 @@ body {
 
     h1 {
         font-family: 'Playball';
-        color: whitesmoke;
+        color: $text;
         text-align: center;
         font-style: italic;
     }
@@ -78,9 +86,9 @@ body {
         margin-top: 3rem;
 
         p {
-            color: whitesmoke;
+            color: $text;
             padding: 50px;
-            border: 2px solid #f011b6;
+            border: 2px solid $pink;
             border-radius: 30px;
             font-size: 2rem;
             width: 80%;
@@ -92,7 +100,7 @@ body {
         display: flex;
         justify-content: space-around;
         align-items: center;
-        color: whitesmoke;
+        color: $text;
     }
 }
 
@@ -103,7 +111,7 @@ body {
 
 .section-title {
     font-family: 'Playball';
-    color: whitesmoke;
+    color: $text;
     text-align: center;
     font-style: italic;
 }
@@ -111,13 +119,13 @@ body {
 .section-desc {
     text-align: center;
     font-family: 'Montserrat', sans-serif;
-    color: whitesmoke;
+    color: $text;
     font-size: 25px;
     letter-spacing: .1em;
 }
 
 .gallery {
-    background: #280a5f;
+    background: $bg;
 }
 
 .gallery-cell {
@@ -142,8 +150,31 @@ body {
     color: white;
 }
 
-#pro-nites{
+#pro-nites {
     height: 100vh;
     padding: 80px 0;
-    background: #280a5f;
+    background: $bg;
+}
+
+.section-tabs {
+    padding: 0 50px;
+}
+
+.tab-btn {
+    background-color: $light-bg !important;
+    color: $text !important;
+    margin: 10px 0 !important;
+}
+
+.nav-link.tab-active {
+    background-color: $light-bg !important;
+    border: 2px solid $pink !important;
+}
+
+.tab-content {
+    width: 80%;
+    max-height: 100% !important;
+}
+.tab-pane.fade.show.active{
+    max-height: 100% !important;
 }
