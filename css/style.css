@@ -169,4 +169,37 @@ body {
 
 .tab-pane p {
   max-height: 100%;
+}
+
+#checkout {
+  height: 50vh;
+}
+#checkout .btn-container {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#checkout .checkout-btn {
+  text-decoration: none !important;
+  color: whitesmoke !important;
+  background-color: #45138d;
+  border-radius: 0.375rem;
+  padding: 4rem;
+  border: 2px solid #FC0FC0;
+  font-size: 1.5rem;
+}
+
+footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: whitesmoke;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  color: whitesmoke;
 }/*# sourceMappingURL=style.css.map */
